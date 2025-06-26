@@ -11,6 +11,7 @@
 </head>
 <body>
 
+    <!--Header-->
     <header>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="height: 70px;"> 
             <div class="container-fluid">
@@ -43,31 +44,38 @@
           </nav>
     </header>
 
+    <!--Main content-->
     <div class="container">
+        <!--Row-->
         <div class="row">
             <div class="col-12 col-lg-9">
                 <div class="table-header d-flex mt-4 mb-3">
                     <h1 class="fs-2">Nuovo Libro</h1>
                 </div>
             </div>
-            <!--Nome e cognome dell'autore-->
+
+            <!--Nome dell'autore-->
             <div class="col-6 mb-3">
                 <label for="formGroupExampleInput" class="form-label fs-5">Nome Autore</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci il nome dell'autore">
             </div>
+
+            <!--Cognome dell'autore-->
             <div class="col-6 mb-3">
                 <label for="formGroupExampleInput2" class="form-label fs-5">Cognome Autore</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci il cognome dell'autore">
             </div>
+
               <!--Titolo-->
             <div class="mb-3">
                 <label for="formGroupExampleInput2" class="form-label fs-5">Titolo</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci il titolo del libro">
                 <label for="formGroupExampleInput2" class="form-label text-body-secondary">Titolo versione italiana</label>
             </div>
-              <!--Genere, anno di pubblicazione e ISBN-->
-
-
+        </div>
+        <!--Row-->
+        <div class="row">
+            <!--Genere-->
             <div class="col-4 mb-3">
                 <label for="formGroupExampleInput2" class="form-label fs-5">Genere</label>
                 <select class="form-select" aria-label="Default select example">
@@ -77,16 +85,45 @@
                     <option value="3">Three</option>
                 </select>
             </div>
+
+            <!--Anno di pubblicazione-->
             <div class="col-4 mb-3">
                 <label for="formGroupExampleInput" class="form-label fs-5">Anno di pubblicazione</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci l'anno">
             </div>
+
+            <!--ISBN#-->
             <div class="col-4 mb-3">
                 <label for="formGroupExampleInput2" class="form-label fs-5">ISBN#</label>
                 <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci il codice ISBN#">
             </div>
-            
+
+            <hr class="mt-4 mb-4"> 
         </div>
+        <!--Note-->
+        <div class="row">
+
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label fs-5">Example label</label>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <label for="floatingTextarea2">Inserisci eventuali note sul libro</label>
+                </div>                
+            </div>
+
+
+            <div class="col-12 mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">Check me out</label>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>                
+        </div>
+
     </div>
     
 </body>
