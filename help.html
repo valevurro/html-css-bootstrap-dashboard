@@ -4,8 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
 </head>
 <body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="height: 70px;"> 
+            <div class="container-fluid">
+                <a class="navbar-brand h-auto" href="#">
+                    <img width="50" src="./duck.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Catalogo Libri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anagrafica Utenti</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Storico Prestiti</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="help.html">Help</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" data-bs-theme="light" type="search" placeholder="Search" aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+          </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-9">
+                <div class="table-header d-flex mt-4 mb-3">
+                    <h1 class="fs-2">Nuovo Libro</h1>
+                </div>
+            </div>
+            <!--Nome e cognome dell'autore-->
+            <div class="col-6 mb-3">
+                <label for="formGroupExampleInput" class="form-label fs-5">Nome Autore</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci il nome dell'autore">
+            </div>
+            <div class="col-6 mb-3">
+                <label for="formGroupExampleInput2" class="form-label fs-5">Cognome Autore</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci il cognome dell'autore">
+            </div>
+              <!--Titolo-->
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label fs-5">Titolo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci il titolo del libro">
+                <label for="formGroupExampleInput2" class="form-label text-body-secondary">Titolo versione italiana</label>
+            </div>
+              <!--Genere, anno di pubblicazione e ISBN-->
+
+
+            <div class="col-4 mb-3">
+                <label for="formGroupExampleInput2" class="form-label fs-5">Genere</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Scegli il genere</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-4 mb-3">
+                <label for="formGroupExampleInput" class="form-label fs-5">Anno di pubblicazione</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Inserisci l'anno">
+            </div>
+            <div class="col-4 mb-3">
+                <label for="formGroupExampleInput2" class="form-label fs-5">ISBN#</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Inserisci il codice ISBN#">
+            </div>
+            
+        </div>
+    </div>
     
 </body>
 </html>
